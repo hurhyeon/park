@@ -22,7 +22,7 @@ export class AuthService {
 
     prepEndpoint(ep) {
       // 3. Ionic app 개발시클라우드서비스주소이용
-      return 'https://meanauth-hyeon.herokuapp.com/' + ep;}  
+      return 'https://mean-heozzang.herokuapp.com/' + ep;}  
 
   registerUser(user:User): Observable<any>{
     //const registerUrl = 'http://localhost:3000/users/register';
