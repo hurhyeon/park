@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
-    { title: 'Register', url: '/register', icon: 'person' },
-    { title: 'Login', url: '/login', icon: 'enter' },
-    { title: 'Dashboard', url: '/dashboard', icon: 'card' },
-    { title: 'Profile', url: '/profile', icon: 'body' },
+    { title: '예약 등록', url: '/register', icon: 'person' },
+    { title: '예약', url: '/login', icon: 'enter' },
+    { title: '예약확인', url: '/profile', icon: 'body' },
+    { title: '지도 검색', url: '/dashboard', icon: 'map'}
   ];
   constructor() {}
 }

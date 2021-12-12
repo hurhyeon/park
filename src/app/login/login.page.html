@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons><ion-title> Login </ion-title>
+    </ion-buttons><ion-title> 예약 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,28 +10,28 @@
   <form (ngSubmit)="onLoginSubmit()">
     <ion-list lines="none" class="ion-no-margin ion-no-padding">
       <ion-item>
-        <ion-label position="stacked">Username</ion-label>
+        <ion-label position="stacked">장소</ion-label>
         <br/>
         <ion-input
         required
         type="text"
-        [(ngModel)]="username"
-        name="username"
-        placeholder="ID"></ion-input>
+        [(ngModel)]="name"
+        name="name"
+        placeholder="장소를 입력하세요"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="stacked">Password</ion-label>
+        <ion-label position="stacked">시간</ion-label>
         <br/>
         <ion-input
-        requiredtype="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="password"></ion-input>
+        requiredtype="text"
+        [(ngModel)]="username"
+        name="username"
+        placeholder="시간을 입력하세요"></ion-input>
       </ion-item>
       
       <div class="ion-padding">
         <ion-button expand="block" type="submit" class="ion-no-margin"
-        >Login </ion-button
+        >예약 </ion-button
         >
       </div>
     </ion-list>
